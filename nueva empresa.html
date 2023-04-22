@@ -5,7 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TTech</title>
+    <style>
+		.logo {
+			float: left; 
+			margin-right: 2px; 
+		}
+	</style>
     <link rel="stylesheet" href="empresa.css">
+    <link rel="icon" href="C:\Users\tinch\Downloads\logo empresa\Logo Empresas.jpg" alt="Logo de la empresa" type="Logo Empresas.jpg">
 </head>
 <body>
     <header>
@@ -14,15 +21,16 @@
             <nav>
                 <a href="#hero">Inicio</a>
                 <a href="#Nosotros">Conocenos</a>
-                <a href="#servicios">servicios</a>
-                <a href="#">Empleos</a>
-                <a href="#">contacto</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#empleo">Empleos</a>
+                <a href="#contacto">Contacto</a>
+                <a href="file:///C:/Users/tinch/OneDrive/Escritorio/egg/estructura.html" style="border: 1px solid #007bff; box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); padding: 5px; color: #007bff; text-decoration: none;">Soluciones Tecnológicas</a>
             </nav>
         </div>
     </header>
     <section id="hero">
         <h1>Aprendé a Programar<br>con Nosotros</h1>
-        <form action="file:///C:/Users/tinch/OneDrive/Escritorio/egg/estructura.html">
+        <form action="">
             <button>
                 APLICA YA!
             </button>
@@ -61,8 +69,50 @@
            
         </div>
 		</section>
-        <section id="empleos">
-
+        <section id="empleo">
+            <div class="conteiner">
+                <h3> <span class="color-acento">Si quieres trabajar con nosotros primero contáctanos.
+                    <br>
+                    Luego te enviaremos instrucciones para que nos envíes tu CV.</span>
+                </h3>
+                <h2><span class="color-acento">Envía tu CV.
+                    <form action="procesar_archivo.php" method="post" enctype="multipart/form-data">
+                        <input type="file" name="archivo">
+                        <input type="submit" value="Enviar archivo">
+                      </form>
+                </span>
+                  
+                  
+              </h2>
+            </div>
+            
+        </section>
+        <section id="contacto">
+            <div class="container">
+                <h2>Contáctanos</h2>
+                <div class="Nombre">
+                    <form>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            <div class="Email">
+                <form>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+            <div class="Mensaje">
+                <form>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+            
+            </div>
         </section>
         <footer>
         
